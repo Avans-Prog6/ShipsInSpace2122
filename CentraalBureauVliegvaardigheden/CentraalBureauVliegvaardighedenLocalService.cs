@@ -5,13 +5,13 @@ using CentraalBureauVliegvaardigheden.Domain;
 
 namespace CentraalBureauVliegvaardigheden.Service
 {
-    public class CentraalBureauVliegvaardigheden : ICentraalBureauVliegvaardigheden
+    public class CentraalBureauVliegvaardighedenLocalService : ICentraalBureauVliegvaardigheden
     {
         private static IEnumerable<Romp> Rompen;
         private static IEnumerable<Wapen> Wapens;
         private static IEnumerable<Vleugel> Vleugels;
         private static IEnumerable<Motor> Motoren;
-        public CentraalBureauVliegvaardigheden()
+        public CentraalBureauVliegvaardighedenLocalService()
         {
             Rompen = new List<Romp> { new Romp {
            Id = 1,
